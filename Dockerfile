@@ -12,6 +12,8 @@ RUN apt-get install -y gcc-multilib
 RUN curl -s "https://dl.dropboxusercontent.com/u/3289117/ventrilo_srv-3.0.3-Linux-i386.tar.gz" >/tmp/ventrilo.tgz
 RUN tar -zxf /tmp/ventrilo.tgz -C /opt
 
+VOLUME /config
+
 RUN mkdir /etc/service/ventrilo
 ADD ventrilo.sh /etc/service/ventrilo/run
 
