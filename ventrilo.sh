@@ -7,4 +7,5 @@
     cp /config/ventrilo_srv.usr /opt/ventsrv/ventrilo_srv.usr
     cp /config/ventrilo_srv.chn /opt/ventsrv/ventrilo_srv.chn
   fi
+  chmod +x /opt/ventsrv/ventrilo_srv
 exec /opt/ventsrv/ventrilo_srv -f/opt/ventsrv/ventrilo_srv >>/var/log/ventrilo.log 2>&1
